@@ -12,20 +12,20 @@ public class lettercount {
 		Scanner ins = new Scanner(System.in);
 	    System.out.println("Enter the value");
 	    str = ins.nextLine();
-		HashMap<Character,Integer> map = new HashMap<>();
+		HashMap<Character,Integer> mapp = new HashMap<>();
 		
 		for(char ch: str.toCharArray() )
 		{
-			if(map.containsKey(ch)) {
+			if(mapp.containsKey(ch)) {
 				
-				int val = map.get(ch);
-				map.put(ch, val+1);
+				int val = mapp.get(ch);
+				mapp.put(ch, val+1);
 			}
 			else{
-				map.put(ch, 1);
+				mapp.put(ch, 1);
 			}
 			}
-			System.out.println(map);
+			System.out.println(mapp);
 			}
 		}	
 	
